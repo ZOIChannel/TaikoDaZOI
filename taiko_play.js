@@ -1,5 +1,5 @@
 // 変数宣言
-let fps = 48
+let fps = 60
 let frame = -100
 let minute = 0
 for (var i = 0; i <= 25; i++) {
@@ -21,7 +21,9 @@ for (var i = 1; i <= 9; i++) {
 for (var i = 0; i <= 9; i++) {
     eval('let img_select_bar_center_' + i)
 }
-
+let selecting = 3 // 今選択しているBarの番号
+let img_select_cursor_left
+let img_select_cursor_right
 
 function setup() {
     createCanvas(1280, 720)
@@ -45,6 +47,8 @@ function setup() {
     for (var i = 0; i <= 9; i++) {
         eval('img_select_bar_center_' + i + '= loadImage("assets/3_SongSelect/5_Bar/Bar_Center_' + i + '.png")')
     }
+    img_select_cursor_left = loadImage("assets/3_SongSelect/6_Cursor/Cursor_Left.png")
+    img_select_cursor_right = loadImage("assets/3_SongSelect/6_Cursor/Cursor_Right.png")
 
 
     textSize(40)
@@ -54,7 +58,9 @@ function setup() {
 function draw() {
     // フレームカウント
     frame++
-    minute = frame / fps
+    if (0 <= frame) {
+        minute = frame / fps
+    }
 
     // バックグラウンド
     image(img_select_back, -(frame % 1280 + 1280), 0)
@@ -62,17 +68,21 @@ function draw() {
     image(img_select_back, -(frame % 1280 - 1280), 0)
 
     // カテゴリ選択
-    image(img_select_bar_box_7, -48.5, 100)
-    image(img_select_bar_box_8, 48.5, 100)
-    image(img_select_bar_box_1, 148.5, 100)
-    image(img_select_bar_box_2, 248.5, 100)
-    image(img_select_bar_box_3, 348.5, 100)
-    image(img_select_bar_center_4, 448.5, 50) // main
-    image(img_select_bar_box_5, 828.5, 100)
-    image(img_select_bar_box_6, 928.5, 100)
-    image(img_select_bar_box_7, 1028.5, 100)
-    image(img_select_bar_box_8, 1128.5, 100)
-    image(img_select_bar_box_1, 1228.5, 100)
+    eval('image(img_select_bar_box_' + ((selecting + 3) % 8 + 1) + ', -48.5, 100)')
+    eval('image(img_select_bar_box_' + ((selecting + 4) % 8 + 1) + ', 48.5, 100)')
+    eval('image(img_select_bar_box_' + ((selecting + 5) % 8 + 1) + ', 148.5, 100)')
+    eval('image(img_select_bar_box_' + ((selecting + 6) % 8 + 1) + ', 248.5, 100)')
+    eval('image(img_select_bar_box_' + ((selecting + 7) % 8 + 1) + ', 348.5, 100)')
+    eval('image(img_select_bar_center_' + ((selecting) % 8 + 1) + ', 448.5, 50)') // main
+    eval('image(img_select_bar_box_' + ((selecting + 1) % 8 + 1) + ', 828.5, 100)')
+    eval('image(img_select_bar_box_' + ((selecting + 2) % 8 + 1) + ', 928.5, 100)')
+    eval('image(img_select_bar_box_' + ((selecting + 3) % 8 + 1) + ', 1028.5, 100)')
+    eval('image(img_select_bar_box_' + ((selecting + 4) % 8 + 1) + ', 1128.5, 100)')
+    eval('image(img_select_bar_box_' + ((selecting + 5) % 8 + 1) + ', 1228.5, 100)')
+
+    // 矢印
+    image(img_select_cursor_left, 370 - 25 * (minute % 1), 310)
+    image(img_select_cursor_right, 820 + 25 * (minute % 1), 310)
 
     // 上下装飾
     image(img_select_header, 0, 0)
@@ -119,4 +129,11 @@ function draw() {
     }
 
 
+}
+function keyTyped() {
+    if (key === 'd') {
+        selecting += 7
+    } else if (key === 'k') {
+        selecting += 1
+    }
 }
