@@ -1,0 +1,288 @@
+
+DTXMania powered by YAMAHA Silent Session Drums
+Release: 1.5.1
+
+2019/01/07 10:52:39.733 [INFO] ----------------------
+2019/01/07 10:52:39.733 [INFO] ■ アプリケーションの初期化
+2019/01/07 10:52:39.733 [INFO] OS Version: Microsoft Windows NT 6.2.9200.0
+2019/01/07 10:52:39.733 [INFO] ProcessorCount: 4
+2019/01/07 10:52:39.734 [INFO] CLR Version: 2.0.50727.8825
+2019/01/07 10:52:39.979 [INFO] スキンの初期化を行います。
+2019/01/07 10:52:39.984 [INFO]     SkinPath検出: C:\Users\USER\Desktop\Test\System\sim\
+2019/01/07 10:52:39.984 [INFO]     SkinPath入力: C:\Users\USER\Desktop\Test\System\sim\
+2019/01/07 10:52:39.985 [INFO]     SkinPath設定: C:\Users\USER\Desktop\Test\System\sim\
+2019/01/07 10:52:40.012 [ERROR]     System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at DTXMania.CSkin.t文字列から読み込み(String strAllSettings) in C:\Users\メグ\Desktop\TaikoCatsDooooN-master ver.1.5.1\DTXManiaプロジェクト\コード\全体\CSkin.cs:line 1150
+2019/01/07 10:52:40.012 [ERROR]     例外が発生しましたが処理を継続します。
+2019/01/07 10:52:40.012 [ERROR]     System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at DTXMania.CSkin.t文字列から読み込み(String strAllSettings) in C:\Users\メグ\Desktop\TaikoCatsDooooN-master ver.1.5.1\DTXManiaプロジェクト\コード\全体\CSkin.cs:line 1158
+2019/01/07 10:52:40.012 [ERROR]     例外が発生しましたが処理を継続します。
+2019/01/07 10:52:40.015 [INFO]     スキンの初期化を完了しました。
+2019/01/07 10:52:40.015 [INFO] タイマの初期化を行います。
+2019/01/07 10:52:40.016 [INFO]     タイマの初期化を完了しました。
+2019/01/07 10:52:40.016 [INFO] FPSカウンタの初期化を行います。
+2019/01/07 10:52:40.017 [INFO]     FPSカウンタを生成しました。
+2019/01/07 10:52:40.017 [INFO] 文字コンソールの初期化を行います。
+2019/01/07 10:52:40.017 [INFO]     文字コンソールを生成しました。
+2019/01/07 10:52:40.027 [INFO]     文字コンソールを活性化しました。
+2019/01/07 10:52:40.027 [INFO]     文字コンソールの初期化を完了しました。
+2019/01/07 10:52:40.027 [INFO] DirectInput, MIDI入力の初期化を行います。
+2019/01/07 10:52:40.044 [INFO]     Keyboard を生成しました。
+2019/01/07 10:52:40.048 [INFO]     Mouse を生成しました。
+2019/01/07 10:52:40.101 [INFO]     MIDI入力デバイス数: 0
+2019/01/07 10:52:40.102 [INFO]     DirectInput の初期化を完了しました。
+2019/01/07 10:52:40.102 [INFO] パッドの初期化を行います。
+2019/01/07 10:52:40.102 [INFO]     パッドの初期化を完了しました。
+2019/01/07 10:52:40.102 [INFO] サウンドデバイスの初期化を行います。
+2019/01/07 10:52:40.107 [INFO]     BASS (ASIO) の初期化を開始します。
+2019/01/07 10:52:40.118 [ERROR]     System.Exception: BASS (ASIO) の初期化に失敗しました。(BASS_ASIO_Init)[BASS_OK; The device may be dissconnected]
+   at FDK.CSoundDeviceASIO..ctor(Int64 n希望バッファサイズms, Int32 _nASIODevice) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\03.サウンド\CSoundDeviceASIO.cs:line 231
+   at FDK.CSound管理.t現在のユーザConfigに従ってサウンドデバイスとすべての既存サウンドを再構築する() in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\03.サウンド\CSound.cs:line 342
+   at FDK.CSound管理.t初期化(ESoundDeviceType soundDeviceType, Int32 _nSoundDelayExclusiveWASAPI, Int32 _nSoundDelayASIO, Int32 _nASIODevice, Boolean _bUseOSTimer) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\03.サウンド\CSound.cs:line 269
+2019/01/07 10:52:40.118 [ERROR]     例外が発生しましたが処理を継続します。
+2019/01/07 10:52:40.120 [INFO]     DirectSound の初期化を開始します。
+2019/01/07 10:52:40.137 [INFO]     DirectSound を初期化しました。(Priority)(OStimer)
+2019/01/07 10:52:40.138 [INFO]     BASS_CONFIG_UpdatePeriod=100
+2019/01/07 10:52:40.138 [INFO]     BASS_CONFIG_UpdateThreads=1
+2019/01/07 10:52:40.138 [INFO]     Initializing loudness scanning, song gain control, and sound group level control...
+2019/01/07 10:52:40.168 [INFO]         LoudnessMetadataScanner.StartBackgroundScanning: BS1770GAIN is available. Starting background scanning thread...
+2019/01/07 10:52:40.169 [INFO]         LoudnessMetadataScanner.StartBackgroundScanning: Background scanning thread started.
+2019/01/07 10:52:40.175 [INFO]     Initialized loudness scanning, song gain control, and sound group level control.
+2019/01/07 10:52:40.177 [INFO]     サウンドデバイスの初期化を完了しました。
+2019/01/07 10:52:40.177 [INFO] 曲リストの初期化を行います。
+2019/01/07 10:52:40.178 [INFO]     曲リストの初期化を完了しました。
+2019/01/07 10:52:40.302 [INFO] プラグインの検索と生成を行います。
+2019/01/07 10:52:40.304 [WARNING]     プラグインフォルダが存在しません。(C:\Users\USER\Desktop\Test\Plugins\)
+2019/01/07 10:52:40.304 [INFO]     プラグインの検索と生成を完了しました。
+2019/01/07 10:52:40.304 [INFO] アプリケーションの初期化を完了しました。
+2019/01/07 10:52:40.304 [INFO] ----------------------
+2019/01/07 10:52:40.304 [INFO] ■ 起動
+2019/01/07 10:52:40.304 [INFO] 起動ステージを活性化します。
+2019/01/07 10:52:40.334 [INFO]     起動ステージの活性化を完了しました。
+2019/01/07 10:52:40.342 [INFO] 0) システムサウンドを構築します。
+2019/01/07 10:52:40.343 [ERROR]     System.IO.FileNotFoundException: Sounds\Setup BGM.ogg
+   at DTXMania.CSkin.Cシステムサウンド.t読み込み() in C:\Users\メグ\Desktop\TaikoCatsDooooN-master ver.1.5.1\DTXManiaプロジェクト\コード\全体\CSkin.cs:line 180
+   at DTXMania.CSkin.Cシステムサウンド.t再生する() in C:\Users\メグ\Desktop\TaikoCatsDooooN-master ver.1.5.1\DTXManiaプロジェクト\コード\全体\CSkin.cs:line 225
+2019/01/07 10:52:40.343 [ERROR]     例外が発生しましたが処理を継続します。
+2019/01/07 10:52:40.365 [INFO]     システムサウンドを読み込みました。(Sounds\Move.ogg)
+2019/01/07 10:52:40.378 [INFO]     システムサウンドを読み込みました。(Sounds\Decide.ogg)
+2019/01/07 10:52:40.386 [INFO]     システムサウンドを読み込みました。(Sounds\Change.ogg)
+2019/01/07 10:52:40.395 [INFO]     システムサウンドを読み込みました。(Sounds\Cancel.ogg)
+2019/01/07 10:52:40.434 [INFO]     システムサウンドを読み込みました。(Sounds\Audience.ogg)
+2019/01/07 10:52:40.463 [INFO]     システムサウンドを読み込みました。(Sounds\Game start.ogg)
+2019/01/07 10:52:40.520 [INFO]     システムサウンドを読み込みました。(Sounds\Full combo.ogg)
+2019/01/07 10:52:40.531 [INFO]     システムサウンドを読み込みました。(Sounds\balloon.ogg)
+2019/01/07 10:52:40.554 [INFO]     システムサウンドを読み込みました。(Sounds\SongDecide.ogg)
+2019/01/07 10:52:40.626 [INFO]     システムサウンドを読み込みました。(Sounds\ResultIn.ogg)
+2019/01/07 10:52:40.626 [INFO] 1) songlist.dbを読み込みます。
+2019/01/07 10:52:40.633 [INFO]     songlist.db の読み込みを完了しました。[0スコア]
+2019/01/07 10:52:40.634 [INFO] 2) songs.db を読み込みます。
+2019/01/07 10:52:40.636 [INFO]     songs.db の読み込みを完了しました。[0スコア]
+2019/01/07 10:52:40.637 [INFO] 起動所要時間: 00:00:00.2934355
+2019/01/07 10:52:40.673 [ERROR] System.IO.FileNotFoundException: ファイルが存在しません。
+[C:\Users\USER\Desktop\Test\System\sim\Graphics\2P_NamePlate.png]
+   at FDK.CTexture.MakeTexture(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する, Pool pool) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 264
+   at FDK.CTexture..ctor(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する, Pool pool) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 259
+   at FDK.CTexture..ctor(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 177
+   at DTXMania.CDTXMania.tテクスチャの生成(String fileName, Boolean b黒を透過する) in C:\Users\メグ\Desktop\TaikoCatsDooooN-master ver.1.5.1\DTXManiaプロジェクト\コード\全体\CDTXMania.cs:line 1589
+2019/01/07 10:52:40.673 [ERROR] テクスチャファイルが見つかりませんでした。(C:\Users\USER\Desktop\Test\System\sim\Graphics\2P_NamePlate.png)
+2019/01/07 10:52:40.835 [ERROR] System.IO.FileNotFoundException: ファイルが存在しません。
+[C:\Users\USER\Desktop\Test\System\sim\Graphics\3_SongSelect\Frame_Box.png]
+   at FDK.CTexture.MakeTexture(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する, Pool pool) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 264
+   at FDK.CTexture..ctor(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する, Pool pool) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 259
+   at FDK.CTexture..ctor(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 177
+   at DTXMania.CDTXMania.tテクスチャの生成(String fileName, Boolean b黒を透過する) in C:\Users\メグ\Desktop\TaikoCatsDooooN-master ver.1.5.1\DTXManiaプロジェクト\コード\全体\CDTXMania.cs:line 1589
+2019/01/07 10:52:40.835 [ERROR] テクスチャファイルが見つかりませんでした。(C:\Users\USER\Desktop\Test\System\sim\Graphics\3_SongSelect\Frame_Box.png)
+2019/01/07 10:52:40.836 [ERROR] System.IO.FileNotFoundException: ファイルが存在しません。
+[C:\Users\USER\Desktop\Test\System\sim\Graphics\3_SongSelect\Frame_BackBox.png]
+   at FDK.CTexture.MakeTexture(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する, Pool pool) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 264
+   at FDK.CTexture..ctor(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する, Pool pool) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 259
+   at FDK.CTexture..ctor(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 177
+   at DTXMania.CDTXMania.tテクスチャの生成(String fileName, Boolean b黒を透過する) in C:\Users\メグ\Desktop\TaikoCatsDooooN-master ver.1.5.1\DTXManiaプロジェクト\コード\全体\CDTXMania.cs:line 1589
+2019/01/07 10:52:40.836 [ERROR] テクスチャファイルが見つかりませんでした。(C:\Users\USER\Desktop\Test\System\sim\Graphics\3_SongSelect\Frame_BackBox.png)
+2019/01/07 10:52:40.836 [ERROR] System.IO.FileNotFoundException: ファイルが存在しません。
+[C:\Users\USER\Desktop\Test\System\sim\Graphics\3_SongSelect\Frame_Random.png]
+   at FDK.CTexture.MakeTexture(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する, Pool pool) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 264
+   at FDK.CTexture..ctor(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する, Pool pool) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 259
+   at FDK.CTexture..ctor(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 177
+   at DTXMania.CDTXMania.tテクスチャの生成(String fileName, Boolean b黒を透過する) in C:\Users\メグ\Desktop\TaikoCatsDooooN-master ver.1.5.1\DTXManiaプロジェクト\コード\全体\CDTXMania.cs:line 1589
+2019/01/07 10:52:40.836 [ERROR] テクスチャファイルが見つかりませんでした。(C:\Users\USER\Desktop\Test\System\sim\Graphics\3_SongSelect\Frame_Random.png)
+2019/01/07 10:52:40.897 [ERROR] System.IO.FileNotFoundException: ファイルが存在しません。
+[C:\Users\USER\Desktop\Test\System\sim\Graphics\3_SongSelect\Bar_Box_0.png]
+   at FDK.CTexture.MakeTexture(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する, Pool pool) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 264
+   at FDK.CTexture..ctor(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する, Pool pool) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 259
+   at FDK.CTexture..ctor(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 177
+   at DTXMania.CDTXMania.tテクスチャの生成(String fileName, Boolean b黒を透過する) in C:\Users\メグ\Desktop\TaikoCatsDooooN-master ver.1.5.1\DTXManiaプロジェクト\コード\全体\CDTXMania.cs:line 1589
+2019/01/07 10:52:40.897 [ERROR] テクスチャファイルが見つかりませんでした。(C:\Users\USER\Desktop\Test\System\sim\Graphics\3_SongSelect\Bar_Box_0.png)
+2019/01/07 10:52:41.606 [ERROR] System.IO.FileNotFoundException: ファイルが存在しません。
+[C:\Users\USER\Desktop\Test\System\sim\Graphics\3_SongSelect\BoxBack_0.png]
+   at FDK.CTexture.MakeTexture(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する, Pool pool) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 264
+   at FDK.CTexture..ctor(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する, Pool pool) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 259
+   at FDK.CTexture..ctor(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 177
+   at DTXMania.CDTXMania.tテクスチャの生成(String fileName, Boolean b黒を透過する) in C:\Users\メグ\Desktop\TaikoCatsDooooN-master ver.1.5.1\DTXManiaプロジェクト\コード\全体\CDTXMania.cs:line 1589
+2019/01/07 10:52:41.606 [ERROR] テクスチャファイルが見つかりませんでした。(C:\Users\USER\Desktop\Test\System\sim\Graphics\3_SongSelect\BoxBack_0.png)
+2019/01/07 10:52:42.985 [ERROR] System.IO.FileNotFoundException: ファイルが存在しません。
+[C:\Users\USER\Desktop\Test\System\sim\Graphics\5_Game\0\Background.png]
+   at FDK.CTexture.MakeTexture(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する, Pool pool) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 264
+   at FDK.CTexture..ctor(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する, Pool pool) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 259
+   at FDK.CTexture..ctor(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 177
+   at DTXMania.CDTXMania.tテクスチャの生成(String fileName, Boolean b黒を透過する) in C:\Users\メグ\Desktop\TaikoCatsDooooN-master ver.1.5.1\DTXManiaプロジェクト\コード\全体\CDTXMania.cs:line 1589
+2019/01/07 10:52:42.985 [ERROR] テクスチャファイルが見つかりませんでした。(C:\Users\USER\Desktop\Test\System\sim\Graphics\5_Game\0\Background.png)
+2019/01/07 10:52:43.139 [ERROR] System.IO.FileNotFoundException: ファイルが存在しません。
+[C:\Users\USER\Desktop\Test\System\sim\Graphics\5_Game\11_Balloon\Combo_2P_Shin.png]
+   at FDK.CTexture.MakeTexture(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する, Pool pool) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 264
+   at FDK.CTexture..ctor(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する, Pool pool) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 259
+   at FDK.CTexture..ctor(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 177
+   at DTXMania.CDTXMania.tテクスチャの生成(String fileName, Boolean b黒を透過する) in C:\Users\メグ\Desktop\TaikoCatsDooooN-master ver.1.5.1\DTXManiaプロジェクト\コード\全体\CDTXMania.cs:line 1589
+2019/01/07 10:52:43.139 [ERROR] テクスチャファイルが見つかりませんでした。(C:\Users\USER\Desktop\Test\System\sim\Graphics\5_Game\11_Balloon\Combo_2P_Shin.png)
+2019/01/07 10:52:43.721 [ERROR] System.IO.FileNotFoundException: ファイルが存在しません。
+[C:\Users\USER\Desktop\Test\System\sim\Graphics\6_Result\Score_Text.png]
+   at FDK.CTexture.MakeTexture(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する, Pool pool) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 264
+   at FDK.CTexture..ctor(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する, Pool pool) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 259
+   at FDK.CTexture..ctor(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 177
+   at DTXMania.CDTXMania.tテクスチャの生成(String fileName, Boolean b黒を透過する) in C:\Users\メグ\Desktop\TaikoCatsDooooN-master ver.1.5.1\DTXManiaプロジェクト\コード\全体\CDTXMania.cs:line 1589
+2019/01/07 10:52:43.721 [ERROR] テクスチャファイルが見つかりませんでした。(C:\Users\USER\Desktop\Test\System\sim\Graphics\6_Result\Score_Text.png)
+2019/01/07 10:52:44.188 [INFO] 起動ステージを非活性化します。
+2019/01/07 10:52:44.191 [INFO]     起動ステージの非活性化を完了しました。
+2019/01/07 10:52:44.191 [INFO] ----------------------
+2019/01/07 10:52:44.191 [INFO] ■ タイトル
+2019/01/07 10:52:44.192 [INFO] タイトルステージを活性化します。
+2019/01/07 10:52:44.192 [INFO]     タイトルステージの活性化を完了しました。
+2019/01/07 10:52:44.213 [INFO] ★曲データ検索スレッドを起動しました。
+2019/01/07 10:52:44.215 [INFO] enum2) 曲データを検索します。
+2019/01/07 10:52:44.215 [INFO]     検索パス: C:\Users\USER\Desktop\Test\.\
+2019/01/07 10:52:44.317 [INFO]     曲データの検索を完了しました。[1曲1スコア]
+2019/01/07 10:52:44.317 [INFO] enum3) songs.db の情報を曲リストへ反映します。
+2019/01/07 10:52:44.319 [INFO]     曲リストへの反映を完了しました。[0/1スコア]
+2019/01/07 10:52:44.319 [INFO] 1, 0
+2019/01/07 10:52:44.319 [INFO] enum4) songs.db になかった曲データ[1スコア]の情報をファイルから読み込んで反映します。
+2019/01/07 10:52:44.353 [INFO]     曲データへの反映を完了しました。[4/1スコア]
+2019/01/07 10:52:44.353 [INFO] enum5) 曲リストへの後処理を適用します。
+2019/01/07 10:52:44.358 [INFO]     曲リストへの後処理を完了しました。
+2019/01/07 10:52:44.358 [INFO] enum6) 曲データの情報を songs.db へ出力します。
+2019/01/07 10:52:44.378 [INFO]     songs.db への出力を完了しました。[4スコア]
+2019/01/07 10:52:44.378 [INFO] enum7) 曲データの情報を songlist.db へ出力します。
+2019/01/07 10:52:44.387 [INFO]     songlist.db への出力を完了しました。[4スコア]
+2019/01/07 10:52:44.387 [INFO] 曲探索所要時間: 00:00:00.1720717
+2019/01/07 10:52:45.457 [INFO] タイトルステージを非活性化します。
+2019/01/07 10:52:45.458 [INFO]     タイトルステージの非活性化を完了しました。
+2019/01/07 10:52:45.458 [INFO] ----------------------
+2019/01/07 10:52:45.458 [INFO] ■ 選曲
+2019/01/07 10:52:45.459 [INFO] 選曲ステージを活性化します。
+2019/01/07 10:52:45.609 [ERROR]     System.IO.FileNotFoundException: ファイルが存在しません。
+[C:\Users\USER\Desktop\Test\System\sim\Graphics\Screen option panels.png]
+   at FDK.CTexture.MakeTexture(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する, Pool pool) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 264
+   at FDK.CTexture..ctor(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する, Pool pool) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 259
+   at FDK.CTexture..ctor(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 177
+   at DTXMania.CDTXMania.tテクスチャの生成(String fileName, Boolean b黒を透過する) in C:\Users\メグ\Desktop\TaikoCatsDooooN-master ver.1.5.1\DTXManiaプロジェクト\コード\全体\CDTXMania.cs:line 1589
+2019/01/07 10:52:45.610 [ERROR]     テクスチャファイルが見つかりませんでした。(C:\Users\USER\Desktop\Test\System\sim\Graphics\Screen option panels.png)
+2019/01/07 10:52:45.617 [ERROR]     System.IO.FileNotFoundException: ファイルが存在しません。
+[C:\Users\USER\Desktop\Test\System\sim\Graphics\5_preimage panel.png]
+   at FDK.CTexture.MakeTexture(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する, Pool pool) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 264
+   at FDK.CTexture..ctor(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する, Pool pool) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 259
+   at FDK.CTexture..ctor(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 177
+   at DTXMania.CDTXMania.tテクスチャの生成(String fileName, Boolean b黒を透過する) in C:\Users\メグ\Desktop\TaikoCatsDooooN-master ver.1.5.1\DTXManiaプロジェクト\コード\全体\CDTXMania.cs:line 1589
+2019/01/07 10:52:45.617 [ERROR]     テクスチャファイルが見つかりませんでした。(C:\Users\USER\Desktop\Test\System\sim\Graphics\5_preimage panel.png)
+2019/01/07 10:52:45.618 [ERROR]     System.IO.FileNotFoundException: ファイルが存在しません。
+[C:\Users\USER\Desktop\Test\System\sim\Graphics\5_sensor.png]
+   at FDK.CTexture.MakeTexture(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する, Pool pool) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 264
+   at FDK.CTexture..ctor(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する, Pool pool) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 259
+   at FDK.CTexture..ctor(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 177
+   at DTXMania.CDTXMania.tテクスチャの生成(String fileName, Boolean b黒を透過する) in C:\Users\メグ\Desktop\TaikoCatsDooooN-master ver.1.5.1\DTXManiaプロジェクト\コード\全体\CDTXMania.cs:line 1589
+2019/01/07 10:52:45.618 [ERROR]     テクスチャファイルが見つかりませんでした。(C:\Users\USER\Desktop\Test\System\sim\Graphics\5_sensor.png)
+2019/01/07 10:52:45.618 [ERROR]     System.IO.FileNotFoundException: ファイルが存在しません。
+[C:\Users\USER\Desktop\Test\System\sim\Graphics\5_preimage default.png]
+   at FDK.CTexture.MakeTexture(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する, Pool pool) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 264
+   at FDK.CTexture..ctor(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する, Pool pool) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 259
+   at FDK.CTexture..ctor(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 177
+   at DTXMania.CDTXMania.tテクスチャの生成(String fileName, Boolean b黒を透過する) in C:\Users\メグ\Desktop\TaikoCatsDooooN-master ver.1.5.1\DTXManiaプロジェクト\コード\全体\CDTXMania.cs:line 1589
+2019/01/07 10:52:45.618 [ERROR]     テクスチャファイルが見つかりませんでした。(C:\Users\USER\Desktop\Test\System\sim\Graphics\5_preimage default.png)
+2019/01/07 10:52:45.623 [ERROR]     System.IO.FileNotFoundException: ファイルが存在しません。
+[C:\Users\USER\Desktop\Test\System\sim\Graphics\5_information_BG.png]
+   at FDK.CTexture.MakeTexture(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する, Pool pool) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 264
+   at FDK.CTexture..ctor(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する, Pool pool) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 259
+   at FDK.CTexture..ctor(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 177
+   at DTXMania.CDTXMania.tテクスチャの生成(String fileName, Boolean b黒を透過する) in C:\Users\メグ\Desktop\TaikoCatsDooooN-master ver.1.5.1\DTXManiaプロジェクト\コード\全体\CDTXMania.cs:line 1589
+2019/01/07 10:52:45.623 [ERROR]     テクスチャファイルが見つかりませんでした。(C:\Users\USER\Desktop\Test\System\sim\Graphics\5_information_BG.png)
+2019/01/07 10:52:45.623 [ERROR]     System.IO.FileNotFoundException: ファイルが存在しません。
+[C:\Users\USER\Desktop\Test\System\sim\Graphics\5_information.png]
+   at FDK.CTexture.MakeTexture(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する, Pool pool) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 264
+   at FDK.CTexture..ctor(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する, Pool pool) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 259
+   at FDK.CTexture..ctor(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 177
+   at DTXMania.CDTXMania.tテクスチャの生成(String fileName, Boolean b黒を透過する) in C:\Users\メグ\Desktop\TaikoCatsDooooN-master ver.1.5.1\DTXManiaプロジェクト\コード\全体\CDTXMania.cs:line 1589
+2019/01/07 10:52:45.624 [ERROR]     テクスチャファイルが見つかりませんでした。(C:\Users\USER\Desktop\Test\System\sim\Graphics\5_information.png)
+2019/01/07 10:52:45.624 [ERROR]     System.IO.FileNotFoundException: ファイルが存在しません。
+[C:\Users\USER\Desktop\Test\System\sim\Graphics\5_information2.png]
+   at FDK.CTexture.MakeTexture(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する, Pool pool) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 264
+   at FDK.CTexture..ctor(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する, Pool pool) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 259
+   at FDK.CTexture..ctor(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 177
+   at DTXMania.CDTXMania.tテクスチャの生成(String fileName, Boolean b黒を透過する) in C:\Users\メグ\Desktop\TaikoCatsDooooN-master ver.1.5.1\DTXManiaプロジェクト\コード\全体\CDTXMania.cs:line 1589
+2019/01/07 10:52:45.624 [ERROR]     テクスチャファイルが見つかりませんでした。(C:\Users\USER\Desktop\Test\System\sim\Graphics\5_information2.png)
+2019/01/07 10:52:45.644 [INFO]     選曲ステージの活性化を完了しました。
+2019/01/07 10:52:49.657 [INFO] プレビューサウンドを生成しました。(C:\Users\USER\Desktop\Test\Songs\Anime\Angelic+Angel\Angelic Angel.ogg)
+2019/01/07 10:52:50.590 [ERROR] System.IO.FileNotFoundException: Sounds\Now loading.ogg
+   at DTXMania.CSkin.Cシステムサウンド.t読み込み() in C:\Users\メグ\Desktop\TaikoCatsDooooN-master ver.1.5.1\DTXManiaプロジェクト\コード\全体\CSkin.cs:line 180
+   at DTXMania.CSkin.Cシステムサウンド.t再生する() in C:\Users\メグ\Desktop\TaikoCatsDooooN-master ver.1.5.1\DTXManiaプロジェクト\コード\全体\CSkin.cs:line 225
+2019/01/07 10:52:50.590 [ERROR] 例外が発生しましたが処理を継続します。
+2019/01/07 10:52:53.590 [INFO] 選曲ステージを非活性化します。
+2019/01/07 10:52:53.622 [INFO]     選曲ステージの非活性化を完了しました。
+2019/01/07 10:52:53.622 [INFO] ----------------------
+2019/01/07 10:52:53.622 [INFO] ■ 曲読み込み
+2019/01/07 10:52:53.622 [INFO] 曲読み込みステージを活性化します。
+2019/01/07 10:52:53.692 [INFO]     曲読み込みステージの活性化を完了しました。
+2019/01/07 10:52:53.710 [INFO] ----曲情報-----------------
+2019/01/07 10:52:53.710 [INFO] TITLE: Angelic Angel
+2019/01/07 10:52:53.710 [INFO] FILE: C:\Users\USER\Desktop\Test\Songs\Anime\Angelic+Angel\Angelic Angel.tja
+2019/01/07 10:52:53.711 [INFO] ---------------------------
+2019/01/07 10:52:53.711 [INFO] DTX読込所要時間:           00:00:00.0040023
+2019/01/07 10:52:55.476 [INFO] WAV読込所要時間(   1):     00:00:01.7645385
+2019/01/07 10:52:55.480 [INFO] LoudnessMetadataScanner.StopBackgroundScanning: Stopping background scanning thread...
+2019/01/07 10:52:55.480 [INFO] LoudnessMetadataScanner.StopBackgroundScanning: Background scanning thread stopped.
+2019/01/07 10:52:55.575 [ERROR] System.IO.FileNotFoundException: ファイルが存在しません。
+[C:\Users\USER\Desktop\Test\System\sim\Graphics\ScreenSelect level numbers.png]
+   at FDK.CTexture.MakeTexture(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する, Pool pool) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 264
+   at FDK.CTexture..ctor(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する, Pool pool) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 259
+   at FDK.CTexture..ctor(DeviceCache device, String strファイル名, Format format, Boolean b黒を透過する) in C:\Users\renre\Desktop\TaikoCatsDooooN\TaikoCatsDooooN master ver.1.4.0\TaikoCatsDooooN master ver.1.4.0\FDK17プロジェクト\コード\04.グラフィック\CTexture.cs:line 177
+   at DTXMania.CDTXMania.tテクスチャの生成(String fileName, Boolean b黒を透過する) in C:\Users\メグ\Desktop\TaikoCatsDooooN-master ver.1.5.1\DTXManiaプロジェクト\コード\全体\CDTXMania.cs:line 1589
+2019/01/07 10:52:55.575 [ERROR] テクスチャファイルが見つかりませんでした。(C:\Users\USER\Desktop\Test\System\sim\Graphics\ScreenSelect level numbers.png)
+2019/01/07 10:52:55.698 [INFO] 総読込時間:                00:00:01.9911895
+2019/01/07 10:52:56.590 [INFO] 曲読み込みステージを非活性化します。
+2019/01/07 10:52:56.591 [INFO]     曲読み込みステージの非活性化を完了しました。
+2019/01/07 10:52:56.591 [INFO] ----------------------
+2019/01/07 10:52:56.591 [INFO] ■ 演奏（ドラム画面）
+2019/01/07 10:52:58.626 [INFO] CSound.SetGain: Gain: 3.50999999046326. True Peak: 0.62
+2019/01/07 10:52:58.626 [INFO] CSound.SetVolume: Gain:3.50999999046326. Automation Level: 0. Group Level: 0. Summed Gain: 3.50999999046326. Safe True Peak Gain: -0.62. Final Gain: -0.62.
+2019/01/07 10:53:06.521 [INFO] ----------------------
+2019/01/07 10:53:06.521 [INFO] ■ アプリケーションの終了
+2019/01/07 10:53:06.521 [INFO] 曲検索actの終了処理を行います。
+2019/01/07 10:53:06.521 [INFO]     曲検索actの終了処理を完了しました。
+2019/01/07 10:53:06.521 [INFO] 現在のステージを終了します。
+2019/01/07 10:53:06.523 [INFO]     CStage演奏画面共通 リソースの開放
+2019/01/07 10:53:06.554 [INFO]     LoudnessMetadataScanner.StartBackgroundScanning: BS1770GAIN is available. Starting background scanning thread...
+2019/01/07 10:53:06.554 [INFO]     LoudnessMetadataScanner.StartBackgroundScanning: Background scanning thread started.
+2019/01/07 10:53:06.555 [INFO]     現在のステージの終了処理を完了しました。
+2019/01/07 10:53:06.555 [INFO] 曲リストの終了処理を行います。
+2019/01/07 10:53:06.555 [INFO]     曲リストの終了処理を完了しました。
+2019/01/07 10:53:06.608 [INFO] スキンの終了処理を行います。
+2019/01/07 10:53:06.610 [INFO]     スキンの終了処理を完了しました。
+2019/01/07 10:53:06.610 [INFO] DirectSound の終了処理を行います。
+2019/01/07 10:53:06.646 [INFO]     DirectSound の終了処理を完了しました。
+2019/01/07 10:53:06.646 [INFO] パッドの終了処理を行います。
+2019/01/07 10:53:06.646 [INFO]     パッドの終了処理を完了しました。
+2019/01/07 10:53:06.646 [INFO] DirectInput, MIDI入力の終了処理を行います。
+2019/01/07 10:53:06.647 [INFO]     DirectInput, MIDI入力の終了処理を完了しました。
+2019/01/07 10:53:06.647 [INFO] 文字コンソールの終了処理を行います。
+2019/01/07 10:53:06.648 [INFO]     文字コンソールの終了処理を完了しました。
+2019/01/07 10:53:06.648 [INFO] FPSカウンタの終了処理を行います。
+2019/01/07 10:53:06.648 [INFO]     FPSカウンタの終了処理を完了しました。
+2019/01/07 10:53:06.648 [INFO] タイマの終了処理を行います。
+2019/01/07 10:53:06.648 [INFO]     タイマの終了処理を完了しました。
+2019/01/07 10:53:06.648 [INFO] Config.ini を出力します。
+2019/01/07 10:53:06.661 [INFO]     保存しました。(C:\Users\USER\Desktop\Test\Config.ini)
+2019/01/07 10:53:06.661 [INFO] Deinitializing loudness scanning, song gain control, and sound group level control...
+2019/01/07 10:53:06.661 [INFO]     LoudnessMetadataScanner.StopBackgroundScanning: Stopping background scanning thread...
+2019/01/07 10:53:06.661 [INFO]     LoudnessMetadataScanner.StopBackgroundScanning: Background scanning thread stopped.
+2019/01/07 10:53:06.662 [INFO] Deinitialized loudness scanning, song gain control, and sound group level control.
+2019/01/07 10:53:06.663 [INFO] アプリケーションの終了処理を完了しました。
+
+遊んでくれてありがとう！
