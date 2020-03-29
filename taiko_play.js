@@ -2,6 +2,8 @@
 let fps = 60
 let frame = -100
 let minute = 0
+
+//img
 for (var i = 0; i <= 25; i++) {
     eval('let img_select_jump_' + i)
     eval('let img_select_' + i)
@@ -25,8 +27,18 @@ let selecting = 3 // 今選択しているBarの番号
 let img_select_cursor_left
 let img_select_cursor_right
 
+//sound
+let sound_dong
+// let sound_dong_L
+// let sound_dong_R
+let sound_ka
+// let sound_ka_L
+// let sound_ka_R
+
 function setup() {
     createCanvas(1280, 720)
+
+    // img
     for (var i = 0; i <= 25; i++) {
         eval('img_select_jump_' + i + '= loadImage("assets/3_SongSelect/1_InChara/' + i + '.png")')
         eval('img_select_' + i + '= loadImage("assets/3_SongSelect/2_Chara/' + i + '.png")')
@@ -50,6 +62,10 @@ function setup() {
     img_select_cursor_left = loadImage("assets/3_SongSelect/6_Cursor/Cursor_Left.png")
     img_select_cursor_right = loadImage("assets/3_SongSelect/6_Cursor/Cursor_Right.png")
 
+    //sound
+    sound_dong = loadSound("assets/Sound/dongP1.ogg")
+    sound_ka = loadSound("assets/Sound/kaP1.ogg")
+
 
     textSize(40)
     textAlign(CENTER)
@@ -68,17 +84,17 @@ function draw() {
     image(img_select_back, -(frame % 1280 - 1280), 0)
 
     // カテゴリ選択
-    eval('image(img_select_bar_box_' + ((selecting + 3) % 8 + 1) + ', -48.5, 100)')
-    eval('image(img_select_bar_box_' + ((selecting + 4) % 8 + 1) + ', 48.5, 100)')
-    eval('image(img_select_bar_box_' + ((selecting + 5) % 8 + 1) + ', 148.5, 100)')
-    eval('image(img_select_bar_box_' + ((selecting + 6) % 8 + 1) + ', 248.5, 100)')
-    eval('image(img_select_bar_box_' + ((selecting + 7) % 8 + 1) + ', 348.5, 100)')
+    eval('image(img_select_bar_box_' + ((selecting + 3) % 8 + 1) + ', -48.5-9, 100)')
+    eval('image(img_select_bar_box_' + ((selecting + 4) % 8 + 1) + ', 48.5-9, 100)')
+    eval('image(img_select_bar_box_' + ((selecting + 5) % 8 + 1) + ', 148.5-9, 100)')
+    eval('image(img_select_bar_box_' + ((selecting + 6) % 8 + 1) + ', 248.5-9, 100)')
+    eval('image(img_select_bar_box_' + ((selecting + 7) % 8 + 1) + ', 348.5-9, 100)')
     eval('image(img_select_bar_center_' + ((selecting) % 8 + 1) + ', 448.5, 50)') // main
-    eval('image(img_select_bar_box_' + ((selecting + 1) % 8 + 1) + ', 828.5, 100)')
-    eval('image(img_select_bar_box_' + ((selecting + 2) % 8 + 1) + ', 928.5, 100)')
-    eval('image(img_select_bar_box_' + ((selecting + 3) % 8 + 1) + ', 1028.5, 100)')
-    eval('image(img_select_bar_box_' + ((selecting + 4) % 8 + 1) + ', 1128.5, 100)')
-    eval('image(img_select_bar_box_' + ((selecting + 5) % 8 + 1) + ', 1228.5, 100)')
+    eval('image(img_select_bar_box_' + ((selecting + 1) % 8 + 1) + ', 828.5+12, 100)')
+    eval('image(img_select_bar_box_' + ((selecting + 2) % 8 + 1) + ', 928.5+12, 100)')
+    eval('image(img_select_bar_box_' + ((selecting + 3) % 8 + 1) + ', 1028.5+12, 100)')
+    eval('image(img_select_bar_box_' + ((selecting + 4) % 8 + 1) + ', 1128.5+12, 100)')
+    eval('image(img_select_bar_box_' + ((selecting + 5) % 8 + 1) + ', 1228.5+12, 100)')
 
     // 矢印
     image(img_select_cursor_left, 370 - 25 * (minute % 1), 310)
@@ -133,7 +149,11 @@ function draw() {
 function keyTyped() {
     if (key === 'd') {
         selecting += 7
+        sound_ka.pan(-1)
+        sound_ka.play()
     } else if (key === 'k') {
         selecting += 1
+        sound_ka.pan(1)
+        sound_ka.play()
     }
 }
