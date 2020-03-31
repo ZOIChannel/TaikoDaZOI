@@ -9,6 +9,10 @@ let selecting_bar = 3 // 今選択しているBarの番号
 let sound_select_start_End = false
 let allSongNumber = 0
 
+
+//font
+let font_TAIKO
+
 //img
 for (var i = 0; i <= 25; i++) {
     eval('let img_select_jump_' + i)
@@ -51,6 +55,9 @@ let sound_cancel
 
 
 function preload() {
+    // font
+    font_TAIKO = loadFont("/assets/fonts/太鼓の達人フォント.ttf")
+
     // img
     for (var i = 0; i <= 25; i++) {
         eval('img_select_jump_' + i + '= loadImage("assets/3_SongSelect/1_InChara/' + i + '.png")')
@@ -98,14 +105,16 @@ function setup() {
     sound_select_loop.setLoop(true)
 
 
+    textFont(font_TAIKO)
     textSize(40)
     textAlign(CENTER)
+    textLeading(40)
     frameRate(fps)
 }
 function draw() {
     // フレームカウント
     frame++
-    if (0 <= frame && frame % 10 == 0) {
+    if (0 <= frame) {
         minute = frame / fps
     }
 
@@ -115,7 +124,7 @@ function draw() {
     eval('image(img_select_back_' + (selecting_bar % 8 + 1) + ', -(frame % 1280 - 1280), 0)')
     if (selected) {
         // 曲選択
-        eval('image(img_select_bar_genre_' + (selecting_bar % 8 + 1) + ', -48.5-9, 100+15)')
+        eval('image(img_select_bar_genre_' + (selecting_bar % 8 + 1) + ', -51.5-9, 100+15)')
         eval('image(img_select_bar_genre_' + (selecting_bar % 8 + 1) + ', 48.5-9, 100+15)')
         eval('image(img_select_bar_genre_' + (selecting_bar % 8 + 1) + ', 148.5-9, 100+15)')
         eval('image(img_select_bar_genre_' + (selecting_bar % 8 + 1) + ', 248.5-9, 100+15)')
@@ -126,9 +135,30 @@ function draw() {
         eval('image(img_select_bar_genre_' + (selecting_bar % 8 + 1) + ', 1028.5+12, 100+15)')
         eval('image(img_select_bar_genre_' + (selecting_bar % 8 + 1) + ', 1128.5+12, 100+15)')
         eval('image(img_select_bar_genre_' + (selecting_bar % 8 + 1) + ', 1228.5+12, 100+15)')
+        // text
+
+        fill(256)
+        stroke(144, 3, 0)
+        strokeWeight(10)
+        text("幽\n玄\nノ\n乱", -1.5 - 9 - 1, 150 + 15 + 15)
+        text("幽\n玄\nノ\n乱", 98.5 - 9 - 1, 150 + 15 + 15)
+        text("幽\n玄\nノ\n乱", 198.5 - 9 - 1, 150 + 15 + 15)
+        text("幽\n玄\nノ\n乱", 298.5 - 9 - 1, 150 + 15 + 15)
+        text("幽\n玄\nノ\n乱", 398.5 - 9 - 1, 150 + 15 + 15)
+        //
+        text("幽\n玄\nノ\n乱", 878.5 + 12 - 1, 150 + 15 + 15)
+        text("幽\n玄\nノ\n乱", 978.5 + 12 - 1, 150 + 15 + 15)
+        text("幽\n玄\nノ\n乱", 1078.5 + 12 - 1, 150 + 15 + 15)
+        text("幽\n玄\nノ\n乱", 1178.5 + 12 - 1, 150 + 15 + 15)
+        text("幽\n玄\nノ\n乱", 1278.5 + 12 - 1, 150 + 15 + 15)
+        //
+        stroke(0)
+        text("幽\n玄\nノ\n乱", 778.5 - 9 - 1, 150 + 15 + 15)
+        stroke('#00000000');
+        noFill()
     } else {
         // カテゴリ選択
-        eval('image(img_select_bar_box_' + ((selecting_bar + 3) % 8 + 1) + ', -48.5-9, 100)')
+        eval('image(img_select_bar_box_' + ((selecting_bar + 3) % 8 + 1) + ', -51.5-9, 100)')
         eval('image(img_select_bar_box_' + ((selecting_bar + 4) % 8 + 1) + ', 48.5-9, 100)')
         eval('image(img_select_bar_box_' + ((selecting_bar + 5) % 8 + 1) + ', 148.5-9, 100)')
         eval('image(img_select_bar_box_' + ((selecting_bar + 6) % 8 + 1) + ', 248.5-9, 100)')
@@ -141,17 +171,17 @@ function draw() {
         eval('image(img_select_bar_box_' + ((selecting_bar + 5) % 8 + 1) + ', 1228.5+12, 100)')
     }
     // 矢印
-    tint(255, 255 * (minute % 1))
+    // tint(255, 255 * (minute % 1))
     image(img_select_cursor_left, 370 - 25 * (minute % 1), 310)
     image(img_select_cursor_right, 820 + 25 * (minute % 1), 310)
-    noTint()
+    // noTint()
 
     // 上下装飾
     image(img_select_header, 0, 0)
     image(img_select_footer, 0, 0)
-    tint(255, 128 * (minute % 2))
+    // tint(255, 128 * (minute % 2))
     image(img_select_footer_effect, 0, 0)
-    noTint()
+    // noTint()
     image(img_namePlate, 0, 0)
 
     // ドンちゃん
@@ -233,12 +263,11 @@ function keyPressed() {
         selected = false
         sound_cancel.play()
     }
-    // console.log(key)
+    console.log(key)
 }
 
 /*
 TODO
-・tintクソ重い(解除したらminit定義重くして良い)
 ・
 ・
 ・
