@@ -1,0 +1,349 @@
+[
+    {
+        "category": "namco",
+        "song": [
+            {
+                "name": "yugen",
+                "title": "幽玄ノ乱",
+                "difficulty": {
+                    "easy": 5,
+                    "normal": 7,
+                    "hard": 8,
+                    "demon": 10,
+                    "edit": 0
+                }
+            },
+            {
+                "name": "souryu",
+                "title": "双竜ノ乱",
+                "difficulty": {
+                    "easy": 5,
+                    "normal": 7,
+                    "hard": 8,
+                    "demon": 10,
+                    "edit": 10
+                }
+            },
+            {
+                "name": "shikou",
+                "title": "紫煌ノ乱",
+                "difficulty": {
+                    "easy": 5,
+                    "normal": 6,
+                    "hard": 8,
+                    "demon": 10,
+                    "edit": 0
+                }
+            },
+            {
+                "name": "ryogen",
+                "title": "燎原ノ舞",
+                "difficulty": {
+                    "easy": 4,
+                    "normal": 6,
+                    "hard": 7,
+                    "demon": 10,
+                    "edit": 0
+                }
+            },
+            {
+                "name": "rdrose",
+                "title": "Ｒｅｄ Ｒｏｓｅ Ｅｖａｎｇｅｌ",
+                "difficulty": {
+                    "easy": ,
+                    "normal": ,
+                    "hard": 7,
+                    "demon": ,
+                    "edit":
+                }
+            },
+            {
+                "name": "",
+                "title": "",
+                "difficulty": {
+                    "easy": ,
+                    "normal": ,
+                    "hard": ,
+                    "demon": ,
+                    "edit":
+                }
+            },
+            {
+                "name": "",
+                "title": "",
+                "difficulty": {
+                    "easy": ,
+                    "normal": ,
+                    "hard": ,
+                    "demon": ,
+                    "edit":
+                }
+            },
+            {
+                "name": "",
+                "title": "",
+                "difficulty": {
+                    "easy": ,
+                    "normal": ,
+                    "hard": ,
+                    "demon": ,
+                    "edit":
+                }
+            },
+            {
+                "name": "",
+                "title": "",
+                "difficulty": {
+                    "easy": ,
+                    "normal": ,
+                    "hard": ,
+                    "demon": ,
+                    "edit":
+                }
+            },
+            {
+                "name": "",
+                "title": "",
+                "difficulty": {
+                    "easy": ,
+                    "normal": ,
+                    "hard": ,
+                    "demon": ,
+                    "edit":
+                }
+            },
+            {
+                "name": "",
+                "title": "",
+                "difficulty": {
+                    "easy": ,
+                    "normal": ,
+                    "hard": ,
+                    "demon": ,
+                    "edit":
+                }
+            },
+            {
+                "name": "",
+                "title": "",
+                "difficulty": {
+                    "easy": ,
+                    "normal": ,
+                    "hard": ,
+                    "demon": ,
+                    "edit":
+                }
+            },
+            {
+                "name": "",
+                "title": "",
+                "difficulty": {
+                    "easy": ,
+                    "normal": ,
+                    "hard": ,
+                    "demon": ,
+                    "edit":
+                }
+            },
+            {
+                "name": "",
+                "title": "",
+                "difficulty": {
+                    "easy": ,
+                    "normal": ,
+                    "hard": ,
+                    "demon": ,
+                    "edit":
+                }
+            },
+            {
+                "name": "",
+                "title": "",
+                "difficulty": {
+                    "easy": ,
+                    "normal": ,
+                    "hard": ,
+                    "demon": ,
+                    "edit":
+                }
+            },
+            {
+                "name": "",
+                "title": "",
+                "difficulty": {
+                    "easy": ,
+                    "normal": ,
+                    "hard": ,
+                    "demon": ,
+                    "edit":
+                }
+            },
+            {
+                "name": "",
+                "title": "",
+                "difficulty": {
+                    "easy": ,
+                    "normal": ,
+                    "hard": ,
+                    "demon": ,
+                    "edit":
+                }
+            },
+            {
+                "name": "",
+                "title": "",
+                "difficulty": {
+                    "easy": ,
+                    "normal": ,
+                    "hard": ,
+                    "demon": ,
+                    "edit":
+                }
+            },
+            {
+                "name": "",
+                "title": "",
+                "difficulty": {
+                    "easy": ,
+                    "normal": ,
+                    "hard": ,
+                    "demon": ,
+                    "edit":
+                }
+            },
+            {
+                "name": "",
+                "title": "",
+                "difficulty": {
+                    "easy": ,
+                    "normal": ,
+                    "hard": ,
+                    "demon": ,
+                    "edit":
+                }
+            },
+            {
+                "name": "",
+                "title": "",
+                "difficulty": {
+                    "easy": ,
+                    "normal": ,
+                    "hard": ,
+                    "demon": ,
+                    "edit":
+                }
+            },
+            {
+                "name": "",
+                "title": "",
+                "difficulty": {
+                    "easy": ,
+                    "normal": ,
+                    "hard": ,
+                    "demon": ,
+                    "edit":
+                }
+            },
+            {
+                "name": "",
+                "title": "",
+                "difficulty": {
+                    "easy": ,
+                    "normal": ,
+                    "hard": ,
+                    "demon": ,
+                    "edit":
+                }
+            },
+            {
+                "name": "",
+                "title": "",
+                "difficulty": {
+                    "easy": ,
+                    "normal": ,
+                    "hard": ,
+                    "demon": ,
+                    "edit":
+                }
+            },
+            {
+                "name": "",
+                "title": "",
+                "difficulty": {
+                    "easy": ,
+                    "normal": ,
+                    "hard": ,
+                    "demon": ,
+                    "edit":
+                }
+            },
+            {
+                "name": "",
+                "title": "",
+                "difficulty": {
+                    "easy": ,
+                    "normal": ,
+                    "hard": ,
+                    "demon": ,
+                    "edit":
+                }
+            },
+            {
+                "name": "",
+                "title": "",
+                "difficulty": {
+                    "easy": ,
+                    "normal": ,
+                    "hard": ,
+                    "demon": ,
+                    "edit":
+                }
+            },
+            {
+                "name": "",
+                "title": "",
+                "difficulty": {
+                    "easy": ,
+                    "normal": ,
+                    "hard": ,
+                    "demon": ,
+                    "edit":
+                }
+            },
+            {
+                "name": "",
+                "title": "",
+                "difficulty": {
+                    "easy": ,
+                    "normal": ,
+                    "hard": ,
+                    "demon": ,
+                    "edit":
+                }
+            },
+            {
+                "name": "",
+                "title": "",
+                "difficulty": {
+                    "easy": ,
+                    "normal": ,
+                    "hard": ,
+                    "demon": ,
+                    "edit":
+                }
+            },
+        ]
+    },
+    {
+        "category": "vocaloid",
+        "song": []
+    },
+    {
+        "category": "variety",
+        "song": []
+    },
+    {
+        "category": "classic",
+        "song": []
+    }
+]
